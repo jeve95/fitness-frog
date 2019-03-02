@@ -1,7 +1,6 @@
 ﻿@model Treehouse.FitnessFrog.Models.Entry
 @using Treehouse.FitnessFrog.Models
 
-
 @{
     ViewBag.Title = "Add Entry";
 
@@ -9,6 +8,7 @@
 
 <h2>@ViewBag.Title</h2>
 
+@Html.ValidationSummary("The following errors were found:", new { @class = "alert alert-danger" })
 
 @using (Html.BeginForm())
 {
